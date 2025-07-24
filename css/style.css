@@ -1,0 +1,271 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #1e1e2f;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f5f5f5;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #00bcd4;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #1e1e2f;
+    width: 100%;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .navbar {
+    flex-wrap: wrap;
+  }
+}
+
+/* Section Styling */
+.section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.section h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #00bcd4;
+  text-align: center;
+}
+
+/* Home Section */
+.home-section {
+  background: linear-gradient(135deg, #f0f4f8, #dfe9f3);
+  color: #1e1e2f;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.home-content {
+  max-width: 800px;
+  margin: auto;
+}
+
+.about-img {
+  width: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.highlight {
+  color: #00bcd4;
+}
+
+.home-buttons {
+  margin-top: 2rem;
+}
+
+.btn {
+  background-color: #00bcd4;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #0097a7;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #00bcd4;
+  color: #00bcd4;
+}
+
+.btn-outline:hover {
+  background-color: #00bcd4;
+  color: white;
+}
+
+/* About Section */
+#about {
+  background-color: #ffffff;
+  padding: 5rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-card {
+  background: #f5f5f5;
+  border-radius: 15px;
+  padding: 2.5rem;
+  max-width: 800px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.card-text h3 {
+  color: #00bcd4;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.about-text strong {
+  color: #00bcd4;
+}
+
+/* Skills Section Styling */
+.section {
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+#skills h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.skill {
+  background-color: #dcdde1;
+  color: #2f3640;
+  padding: 10px 18px;
+  border-radius: 20px;
+  font-weight: 500;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  transition: background-color 0.3s ease;
+}
+
+.skill:hover {
+  background-color: #a29bfe;
+  color: white;
+}
+
+/* Academic Subjects Subsection */
+.college-subjects {
+  margin-top: 35px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.college-subjects h3 {
+  font-size: 22px;
+  color: #34495e;
+  margin-bottom: 12px;
+  border-left: 4px solid #6c5ce7;
+  padding-left: 10px;
+}
+
+.subject-list {
+  list-style-type: square;
+  padding-left: 20px;
+  color: #2d3436;
+}
+
+.subject-list li {
+  margin-bottom: 6px;
+  font-size: 16px;
+}
+
+
+/* Projects Section */
+.projects-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.project-card {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  color: #00bcd4;
+  margin-bottom: 1rem;
+}
+
+/* Contact Section */
+.contact-list {
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.contact-list li {
+  margin: 0.5rem 0;
+}
+
+.contact-list a {
+  color: #00bcd4;
+  text-decoration: none;
+}
+
+.contact-list a:hover {
+  text-decoration: underline;
+}

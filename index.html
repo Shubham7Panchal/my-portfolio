@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ======= Navbar ======= -->
+  <header class="navbar">
+    <div class="logo">Shubham</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ======= Home Section ======= -->
+  <section id="home" class="home-section">
+    <div class="home-content">
+      <img src="assests\passportSizePic.jpg" alt="Shubham Panchal" class="about-img" />
+      <h1>Hi, I'm <span class="highlight">Shubham Panchal</span></h1>
+      <p>
+        I love transforming ideas into functional, user-friendly websites.<br>
+        Currently learning DSA, Web Development & working on real-world projects.
+      </p>
+      <div class="home-buttons">
+        <a href="#projects" class="btn">View Projects</a>
+        <a href="#contact" class="btn btn-outline">Let's Connect</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= About Section ======= -->
+  <section id="about" class="section">
+    <h2>About Me</h2>
+    <div class="about-card">
+      <div class="card-text">
+        <h3>I am a <span id="typed"></span></h3>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        <script>
+          new Typed('#typed', {
+            strings: ['Web Developer', 'CSE Student', 'Tech Learner'],
+            typeSpeed: 50,
+            backSpeed: 25,
+            loop: true
+          });
+        </script>
+        <div class="about-text">
+          <p>
+            I'm <strong>Shubham Panchal</strong>, a B.Tech CSE student driven by a passion for building clean, intuitive web experiences.
+            My tech journey started with basic programming and curiosity, but soon evolved into designing interactive, real-world projects.
+            From solving <strong>DSA problems</strong> to crafting beautiful websites, I love working at the intersection of design, logic, and usability.
+            I believe in continuous growth, and I’m excited to learn, collaborate, and contribute wherever possible.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Skills Section ======= -->
+<section id="skills" class="section">
+  <h2>Skills</h2>
+
+  <div class="skills-list">
+    <div class="skill">HTML</div>
+    <div class="skill">CSS</div>
+    <div class="skill">Figma</div>
+    <div class="skill">JavaScript</div>
+    <div class="skill">OOPs in C++</div>
+    <div class="skill">Python</div>
+    <div class="skill">Flask</div>
+    <div class="skill">MySQL</div>
+  </div>
+
+  <!-- ======= Academic Subjects Subsection ======= -->
+  <div class="college-subjects">
+    <h3>Academic Subjects</h3>
+    <ul class="subject-list">
+      <li>Extensible Markup Language</li>
+      <li>Hypertext Preprocessor</li>
+      <li>Database Management System</li>
+      <li>Operating Systems</li>
+      <li>Computer Organization and Architecture</li>
+      <li>Data Structure & Algorithm</li>
+    </ul>
+  </div>
+</section>
+
+
+  <!-- ======= Projects Section =======
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>To-Do Web App</h3>
+        <p>A simple task manager built with HTML, CSS, and JavaScript.</p>
+        <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>My personal responsive portfolio site using HTML and CSS.</p>
+        <a href="#">Live Demo</a> | <a href="#">GitHub</a>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ======= Contact Section ======= -->
+<section id="contact" class="section">
+  <h2>Contact Me</h2>
+
+  <ul class="contact-list">
+    <li>
+      <i class="fas fa-envelope"></i>
+      <a href="mailto:shubhampanchal2112@gmail.com">shubhampanchal2112@gmail.com</a>
+    </li>
+    <li>
+      <i class="fab fa-linkedin"></i>
+      <a href="https://www.linkedin.com/in/shubham-panchal2005" target="_blank">
+        linkedin.com/in/shubham-panchal2005
+      </a>
+    </li>
+    <li>
+      <i class="fab fa-github"></i>
+      <a href="https://github.com/Shubham7Panchal" target="_blank">
+        github.com/Shubham7Panchal
+      </a>
+    </li>
+  </ul>
+</section>
+
+<!-- Include Font Awesome in your <head> if not already -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</body>
+</html>
