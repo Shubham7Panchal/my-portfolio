@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
   <title>Portfolio</title>
   <link rel="stylesheet" href="css/style.css"/>
   <style>
@@ -11,11 +12,22 @@
     }
   </style>
 </head>
+<script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+  }
+</script>
+
 <body>
 
   <!-- ======= Navbar ======= -->
   <header class="navbar">
     <div class="logo">Shubham</div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <i class="fas fa-bars"></i>
+    </div>
+
     <nav>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
